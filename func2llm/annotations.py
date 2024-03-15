@@ -1,7 +1,7 @@
 import inspect
 
 
-def gpt_extension(description: str, param_descriptions: dict):
+def action(description: str, param_descriptions: dict):
     def decorator(func):
         def wrapper(*args, **kwargs):
             return func(*args, **kwargs)
